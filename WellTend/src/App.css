@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wing-100: oklab(23.2% -0.006 -0.022);
+  --color-wing-200: oklab(76.7% -0.003 0.139);
+  --color-wing-300: oklab(93.7% -0.001 0.032);
+  --color-wing-400: oklab(79.8% 0 0);
+}
+
+@theme {
+  --color-wing-100: #161e28;
+  --color-wing-200: #d4af37;
+  --color-wing-300: #f2ead3;
+  --color-wing-400: #bdbdbd;
+}
+
+.navbar-link {
+  @apply bg-transparent font-semibold p-2 rounded-full;
+  @apply hover:bg-wing-100 hover:text-wing-400 hover:shadow;
+}
+
+.card {
+  /* @apply bg-wing-100 rounded-xl text-white p-2 my-2 shadow */
+  @apply rounded p-2 my-2 border-2;
+}
